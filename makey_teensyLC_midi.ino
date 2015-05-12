@@ -1,3 +1,5 @@
+//Rebuild for teensyLC
+
 int bounceThreshold = 0; // a press must last this many loop cycles (about 20ms each) before triggering. 
 // higher values make it less sensitive, fewer false triggers, higher latency
 
@@ -14,9 +16,9 @@ int channel = 1;
 
 // teensy makey pin numbers
 int pinNumbers[NUM_INPUTS] = {
-  0,1,2,3,4,5,7,8,9,10,11,12,13,14,15,16,17,         // left side starting at USB connector, pin D0, skipping D6 
-  26,25,24,23,22,21,20,19,18,38,39,40,41,42,43,44,45, // right side starting at USB connector, pin B6, skipping gnd and aref
-  36,37,32,33,34,35,28,29,30,31                      // these are "interior" through-holes, in the center of the board
+  0,1,2,3,4,5,7,8,9,10,11,12,     // left side starting at USB connector, pin D0, skipping D6 
+  13,14,15,16,17,18,19,20,21,22,23, // right side starting at USB connector, pin B6, skipping gnd and aref
+  24,25                     // these are "interior" through-holes, in the center of the board
 };
 
 // cap sense thresholds for each pin
